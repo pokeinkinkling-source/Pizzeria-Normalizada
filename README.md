@@ -43,3 +43,66 @@ erDiagram
 
     ROL ||--o{ EMPLEADO : asignado
 ```
+# Proyecto de Normalización de Base de Datos
+
+## Primera Forma Normal (1FN)
+
+En esta etapa se identificaron las entidades principales de la pizzería y sus atributos.
+
+![Primera Forma Normal](docs/img/1FN.png)
+
+### Entidades identificadas
+
+- Cliente
+- Empleado
+- Pizza
+- Pedido
+- Proveedor
+- Insumo
+
+---
+
+## Segunda Forma Normal (2FN)
+
+Se eliminaron dependencias parciales y se separaron las entidades relacionadas.
+
+![Segunda Forma Normal](docs/img/2FN.png)
+
+### Nuevas entidades
+
+- Rol
+- Tipo Consumo
+- Unidad Medida
+- Proveedor-Insumo
+- Compra-Insumo
+- Detalle Compra
+- Pizza-Tamaño
+- Detalle Pedido
+- Método Pago
+- Pago
+
+---
+
+## Tercera Forma Normal (3FN)
+
+Se eliminaron dependencias transitivas y se agregaron nuevas entidades para mejorar la integridad de los datos.
+
+![Tercera Forma Normal](docs/img/3FN.png)
+
+### Nuevas entidades
+
+- Bebida
+- Tipo Bebida
+- Bebida Tamaño
+- Datos Fiscales
+- Factura
+- Factura Detalle
+- Detalle Bebida
+- Cancelación Pedido
+- Cancelación Factura
+
+---
+
+## Tablas de Cancelación
+
+![Cancelaciones](docs/img/Cancelaciones.png)
